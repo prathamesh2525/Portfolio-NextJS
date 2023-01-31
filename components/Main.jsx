@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "next/link"
 import { AiOutlineMail } from "react-icons/ai"
 import { FaGithub, FaTwitter } from "react-icons/fa"
 import { BsFillPersonLinesFill } from "react-icons/bs"
@@ -21,15 +22,21 @@ const Main = () => {
             nostrum, id deleniti nesciunt officia eveniet tempora?
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-            <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-150">
-              <FaTwitter />
-            </div>
-            <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-150">
-              <FaGithub />
-            </div>
-            <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-150">
-              <AiOutlineMail />
-            </div>
+            <Link href="https://twitter.com/2xprathamesh" target="_blank">
+              <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-150">
+                <FaTwitter />
+              </div>
+            </Link>
+            <Link href="https://github.com/prathamesh2525" target="_blank">
+              <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-150">
+                <FaGithub />
+              </div>
+            </Link>
+            <Link href="mailto:prathameshmadniwale31@gmail.com" target="_blank">
+              <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-150">
+                <AiOutlineMail />
+              </div>
+            </Link>
             <div className="rounded-full shadow-md shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-150">
               <BsFillPersonLinesFill />
             </div>

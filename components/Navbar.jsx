@@ -15,13 +15,15 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-20 shadow-xl z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
-          src={image}
-          alt="Logo"
-          width={150}
-          height={150}
-          className="cursor-pointer"
-        />
+        <Link href="/">
+          <Image
+            src={image}
+            alt="Logo"
+            width={150}
+            height={150}
+            className="cursor-pointer"
+          />
+        </Link>
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -94,16 +96,25 @@ const Navbar = () => {
                 Let&#39;s Connect
               </p>
               <div className="flex items-center justify-between w-full my-4 sm:w-[80%] ">
-                <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150">
-                  <FaTwitter />
-                </div>
-                <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150">
-                  <FaGithub />
-                </div>
-                <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-md shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-150">
+                <Link href="https://twitter.com/2xprathamesh" target="_blank">
+                  <div className="rounded-full shadow-md shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-150">
+                    <FaTwitter />
+                  </div>
+                </Link>
+                <Link href="https://github.com/prathamesh2525" target="_blank">
+                  <div className="rounded-full shadow-md shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-150">
+                    <FaGithub />
+                  </div>
+                </Link>
+                <Link
+                  href="mailto:prathameshmadniwale31@gmail.com"
+                  target="_blank"
+                >
+                  <div className="rounded-full shadow-md shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-150">
+                    <AiOutlineMail />
+                  </div>
+                </Link>
+                <div className="rounded-full shadow-md shadow-gray-400 p-4 cursor-pointer hover:scale-105 ease-in duration-150">
                   <BsFillPersonLinesFill />
                 </div>
               </div>
